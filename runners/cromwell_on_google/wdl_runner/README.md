@@ -104,7 +104,7 @@ docker tag ${USER}/wdl_runner gcr.io/YOUR-PROJECT-ID/wdl_runner
 gcloud docker -- push gcr.io/YOUR-PROJECT-ID/wdl_runner
 ```
 
-* Replace `YOUR-PROJECT-ID` with your project ID.
+* Replace `YOUR-PROJECT-ID` with your [Google project ID](https://support.google.com/cloud/answer/6158840).
 
 ## (2) Run a test workflow in the cloud
 
@@ -222,7 +222,7 @@ TOTAL: 2 objects, 5297 bytes (5.17 KiB)
 ## (6) Check the output
 
 ```
-$ gsutil cat gs://YOUR-BUCKET/pipelines-api-examples/wdl_runner/output/md5sum.txt
+$ gsutil cat gs://YOUR-BUCKET/wdl_runner/output/md5sum.txt
 00579a00e3e7fa0674428ac7049423e2
 ```
 
